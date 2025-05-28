@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="./images/favicon.png" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/icons.css" />
+
+    <link rel="stylesheet" href="./css/carouselTicker.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/jquery.carouselTicker.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".carouselTicker").carouselTicker({
+          // animation speed
+          speed: 1,
+
+          // animation delay
+          delay: 30,
+
+          // or 'next'
+          direction: "prev",
+
+          // or 'vertical'
+          mode: "horizontal",
+
+          // callback
+          onCarouselTickerLoad: function () {},
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- =============== Start Preloader =============== -->
+    <div id="loader" style="display: none">
+      <span></span>
+    </div>
+    <!-- =============== End Preloader =============== -->
+
+    <main id="content" style="display: block">
+      <!-- =============== Start Background Image =============== -->
+      <img src="./images/main-bg.png" class="main-bg" alt="" />
+      <!-- =============== End Background Image =============== -->
+
+      <!-- =============== Start Header =============== -->
+      <header id="header">
+        <div class="container">
+          <div class="content border">
+            <div class="left">
+              <span class="icon-menu offcanvas-open"></span>
+              <a href="#" class="logo">
+                <img src="./images/favicon.png" alt="" />
+                <span>Mohamed.ayman</span>
+              </a>
+            </div>
+            <div class="center">
+              <nav>
+                <ul>
+                  <li>
+                    <a href="#" class="active">Home</a>
+                  </li>
+                  <li>
+                    <a href="#">Services</a>
+                  </li>
+                  <li>
+                    <a href="#">Portfolio</a>
+                  </li>
+                  <li>
+                    <a href="#">Pricing</a>
+                  </li>
+                  <li>
+                    <a href="#">Blog</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="right">
+              <a href="#" class="icon-facebook"></a>
+              <a href="#" class="icon-github"></a>
+              <a href="#" class="icon-linkedin"></a>
+            </div>
+            <span class="icon-menu open-nav"></span>
+          </div>
+        </div>
+        <div class="offcanvas-nav">
+          <span class="icon-cancel offcanvas-nav-close"></span>
+          <nav>
+            <ul>
+              <li>
+                <a href="#" class="active">Home</a>
+              </li>
+              <li>
+                <a href="#">Services</a>
+              </li>
+              <li>
+                <a href="#">Portfolio</a>
+              </li>
+              <li>
+                <a href="#">Pricing</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="offcanvas-info">
+          <span class="icon-cancel offcanvas-info-close"></span>
+          <span class="title">Get in touch</span>
+          <div class="body mb-3">
+            <p class="description">
+              I'm always excited to take on new projects and collaborate with
+              innovative minds.
+            </p>
+            <div class="mb-3">
+              <span>Phone</span>
+              <p class="m-0">+20 102 7776 882</p>
+            </div>
+            <div class="mb-3">
+              <span>Email</span>
+              <p class="m-0">devel.mohamed.ayman@gmail.com</p>
+            </div>
+            <div class="mb-3">
+              <span>Website</span>
+              <p class="m-0">https://mohamed-ayman.com</p>
+            </div>
+            <div class="mb-3">
+              <span>Address</span>
+              <p class="m-0">Alexandria, Egypt</p>
+            </div>
+          </div>
+          <div class="social">
+            <p>Social</p>
+            <div class="links">
+              <a href="#" class="icon-facebook"></a>
+              <a href="#" class="icon-github"></a>
+              <a href="#" class="icon-linkedin"></a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- =============== End Header =============== -->
+
+      <!-- =============== Start Hero =============== -->
+      <section id="hero">
+        <div class="container">
+          <div class="content rotated-border">
+            <div class="left">
+              <img src="./images/me.png" alt="" />
+              <img src="./images/me-shape.png" class="me-shape" alt="" />
+            </div>
+            <div class="right">
+              <div class="title">
+                &lt;span&gt;<span class="typewriter"
+                  ><h1>Hey, I’m Mohamed</h1></span
+                >&lt;/span&gt;
+              </div>
+              <h2 class="big-title">
+                Senior <span class="text-primary">{Full Stack}</span
+                ><span class="space"> </span>PHP Laravel Developer<span
+                  class="flicker"
+                  >_</span
+                >
+              </h2>
+              <p class="description">
+                &lt;p&gt;<span class="text-white"
+                  >With expertise in cutting-edge technologies such as</span
+                >
+                NodeJS, React, Angular,
+                <span class="text-white">and</span> Laravel...
+                <span class="text-white"
+                  >I deliver web solutions that are both innovative and
+                  robust.</span
+                >
+                &lt;/p&gt;
+              </p>
+
+              <div class="flex skills">
+                <div class="carouselTicker">
+                  <ul class="carouselTicker__list">
+                    <li class="carouselTicker__item">
+                      <div class="item border">
+                        <img
+                          src="https://zelio-developer.botble.com/storage/code/skills/1.png"
+                          alt=""
+                        />
+                      </div>
+                    </li>
+                    <li class="carouselTicker__item">
+                      <div class="item border">
+                        <img
+                          src="https://zelio-developer.botble.com/storage/code/skills/1.png"
+                          alt=""
+                        />
+                      </div>
+                    </li>
+                    <li class="carouselTicker__item">
+                      <div class="item border">
+                        <img
+                          src="https://zelio-developer.botble.com/storage/code/skills/1.png"
+                          alt=""
+                        />
+                      </div>
+                    </li>
+                    <li class="carouselTicker__item">
+                      <div class="item border">
+                        <img
+                          src="https://zelio-developer.botble.com/storage/code/skills/1.png"
+                          alt=""
+                        />
+                      </div>
+                    </li>
+                    <li class="carouselTicker__item">
+                      <div class="item border">
+                        <img
+                          src="https://zelio-developer.botble.com/storage/code/skills/1.png"
+                          alt=""
+                        />
+                      </div>
+                    </li>
+                    <li class="carouselTicker__item">
+                      <div class="item border">
+                        <img
+                          src="https://zelio-developer.botble.com/storage/code/skills/1.png"
+                          alt=""
+                        />
+                      </div>
+                    </li>
+                    <li class="carouselTicker__item">
+                      <div class="item border">
+                        <img
+                          src="https://zelio-developer.botble.com/storage/code/skills/1.png"
+                          alt=""
+                        />
+                      </div>
+                    </li>
+                    <li class="carouselTicker__item">
+                      <div class="item border">
+                        <img
+                          src="https://zelio-developer.botble.com/storage/code/skills/1.png"
+                          alt=""
+                        />
+                      </div>
+                    </li>
+                    <li class="carouselTicker__item">
+                      <div class="item border">
+                        <img
+                          src="https://zelio-developer.botble.com/storage/code/skills/1.png"
+                          alt=""
+                        />
+                      </div>
+                    </li>
+                    <li class="carouselTicker__item">
+                      <div class="item border">
+                        <img
+                          src="https://zelio-developer.botble.com/storage/code/skills/1.png"
+                          alt=""
+                        />
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <span>...and more</span>
+              </div>
+
+              <a href="#" class="btn-cv">
+                <span class="icon-download text-primary"></span>
+                Download My CV
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =============== End Hero =============== -->
+
+      <!-- =============== Start Hero =============== -->
+      <section id="counter">
+        <div class="container">
+          <div class="content rotated-border">
+            <div class="background"></div>
+            <div class="box">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 6l4 6l5 -4l-2 10h-14l-2 -10l5 4z"></path>
+                </svg>
+                <h2 class="">
+                  <span class="" data-count="12">12</span
+                  ><span class="">+</span>
+                </h2>
+                <p class="fs-6 mb-0 text-dark">Years Experience</p>
+              </div>
+            </div>
+            <div class="box">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path
+                    d="M3 5a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1v-10z"
+                  ></path>
+                  <path d="M7 20h10"></path>
+                  <path d="M9 16v4"></path>
+                  <path d="M15 16v4"></path>
+                </svg>
+                <h2 class="">
+                  <span class="" data-count="12">12</span
+                  ><span class="">+</span>
+                </h2>
+                <p class="fs-6 mb-0 text-dark">Projects Completed</p>
+              </div>
+            </div>
+            <div class="box">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path
+                    d="M11.537 19.542l-7.037 -6.97a5 5 0 1 1 7.5 -6.566a5 5 0 0 1 8.212 5.693"
+                  ></path>
+                  <path
+                    d="M19 22.5a4.75 4.75 0 0 1 3.5 -3.5a4.75 4.75 0 0 1 -3.5 -3.5a4.75 4.75 0 0 1 -3.5 3.5a4.75 4.75 0 0 1 3.5 3.5"
+                  ></path>
+                </svg>
+                <h2 class="">
+                  <span class="" data-count="12">12</span
+                  ><span class="">+</span>
+                </h2>
+                <p class="fs-6 mb-0 text-dark">Satisfied Clients</p>
+              </div>
+            </div>
+            <div class="box">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 9m-6 0a6 6 0 1 0 12 0a6 6 0 1 0 -12 0"></path>
+                  <path
+                    d="M12 15l3.4 5.89l1.598 -3.233l3.598 .232l-3.4 -5.889"
+                  ></path>
+                  <path
+                    d="M6.802 12l-3.4 5.89l3.598 -.233l1.598 3.232l3.4 -5.889"
+                  ></path>
+                </svg>
+                <h2 class="">
+                  <span class="" data-count="12">12</span
+                  ><span class="">+</span>
+                </h2>
+                <p class="fs-6 mb-0 text-dark">Awards Winner</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =============== End Hero =============== -->
+
+      <!-- =============== Start Hero =============== -->
+      <section id="coporation"></section>
+      <!-- =============== End Hero =============== -->
+
+      <!-- =============== Start Hero =============== -->
+      <section id="services"></section>
+      <!-- =============== End Hero =============== -->
+
+      <!-- =============== Start Hero =============== -->
+      <section id="portfolio"></section>
+      <!-- =============== End Hero =============== -->
+
+      <!-- =============== Start Hero =============== -->
+      <section id="resume"></section>
+      <!-- =============== End Hero =============== -->
+
+      <!-- =============== Start Hero =============== -->
+      <section id="projects"></section>
+      <!-- =============== End Hero =============== -->
+
+      <!-- =============== Start Hero =============== -->
+      <section id="skills"></section>
+      <!-- =============== End Hero =============== -->
+
+      <!-- =============== Start Hero =============== -->
+      <section id="blog"></section>
+      <!-- =============== End Hero =============== -->
+
+      <!-- =============== Start Hero =============== -->
+      <section id="contact"></section>
+      <!-- =============== End Hero =============== -->
+
+      <!-- =============== Start Hero =============== -->
+      <section id="footer"></section>
+      <!-- =============== End Hero =============== -->
+    </main>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

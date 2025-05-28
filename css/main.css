@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --color-primary: #62a92b;
+  --color-secondary: #f778ba;
+  --color-background: #1f1f24;
+  --color-background2: rgb(39, 39, 48);
+  --color-text: #bcbcbe;
+
+  --primary-font: "DM Mono", sans-serif;
+  --secondary-font: "Urbanist", sans-serif;
+
+  --border-color: #3b413d;
+  --border-radius: 8px;
+}
+
+body {
+  font-family: var(--primary-font);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+* {
+  font-family: var(--primary-font);
+}
+
+.container {
+  width: 95%;
+  /* padding-right: 1.5rem;
+  padding-left: 1.5rem; */
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+.border {
+  border: 1px solid var(--border-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+
+.bg-color-2 {
+  background-color: var(--color-background2);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+.text-secondary {
+  color: var(--color-secondary);
+}
+.text-white {
+  color: #fff;
+}

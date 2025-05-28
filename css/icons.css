@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot?wv5yry");
+  src: url("fonts/icomoon.eot?wv5yry#iefix") format("embedded-opentype"),
+    url("fonts/icomoon.ttf?wv5yry") format("truetype"),
+    url("fonts/icomoon.woff?wv5yry") format("woff"),
+    url("fonts/icomoon.svg?wv5yry#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cancel:before {
+  content: "\e90a";
+}
+.icon-arrow-up:before {
+  content: "\e900";
+}
+.icon-map:before {
+  content: "\e901";
+}
+.icon-arrow-up-right:before {
+  content: "\e902";
+}
+.icon-arrow-right:before {
+  content: "\e903";
+}
+.icon-arrow-left:before {
+  content: "\e904";
+}
+.icon-phone:before {
+  content: "\e905";
+}
+.icon-mail:before {
+  content: "\e906";
+}
+.icon-download:before {
+  content: "\e907";
+}
+.icon-facebook:before {
+  content: "\e908";
+}
+.icon-menu:before {
+  content: "\e909";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}

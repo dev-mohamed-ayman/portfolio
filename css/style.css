@@ -530,8 +530,9 @@ main img.main-bg {
     flex-wrap: wrap;
   }
   #hero .content .right .skills .carouselTicker {
-    max-width: 100%;
+    max-width: 90%;
     padding: 0;
+    margin: 0 auto;
   }
   #hero .content .right .skills span {
     /* display: none; */
